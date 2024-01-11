@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Head from './Head'
 import Search from './Search'
 import "./Header.css"
+import { Router } from 'react-router-dom'
 
 
 
@@ -11,11 +12,16 @@ import "./Header.css"
 function Header() {
   return (
     <>
-
-   
+    <Router>
       <Head/>
       <Navbar/>
       <Search/>
+
+
+    </Router>
+
+   
+      
 
    
     </>
