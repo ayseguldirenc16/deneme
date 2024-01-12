@@ -7,10 +7,11 @@ function FlashCard({productItems}) {
     <>
     {
     productItems.map((productItems )=>{
+        return(
      <div className="box">
         <div className="product mtop">
             <div className="img">
-                <span className='discount'>{{productItems} .indirimOrani}</span>
+                <span className='discount'>{productItems.indirimOrani}</span>
                 <img src="" alt="" />
                 <div className="product-like">
                     <label ></label> <br />
@@ -36,6 +37,7 @@ function FlashCard({productItems}) {
             </div>
         </div>
      </div>
+     )
      })}
 
     </>
