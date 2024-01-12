@@ -45,6 +45,7 @@ function Categories() {
   ]
   return (
     <>
+    
       <div className="category">
         {
           data.map((item,index)=>{

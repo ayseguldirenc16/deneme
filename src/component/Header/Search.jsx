@@ -1,13 +1,16 @@
 import React from 'react'
-import "./Header.css"
+import './Header.css'
 import logo from '../../assets/logo.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faSearch,faCircle, faShoppingBag, faUser} from '@fortawesome/free-solid-svg-icons';
 import {Link } from 'react-router-dom';
+
+
+
 function Search() {
   window.addEventListener("scroll",function(){
     const search = this.document.querySelector(".Search")
-    search.classList.toggle("active", window.scrollY > 100)
+    Search.classList.toggle("active", window.scrollY > 100)
   })
   return (
     <>

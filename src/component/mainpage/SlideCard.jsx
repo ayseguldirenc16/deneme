@@ -1,7 +1,7 @@
 import Sdata from './Sdata'
 import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import './Home.css'
 
 function SlideCard ()  {
@@ -20,7 +20,7 @@ function SlideCard ()  {
   return (
    <>
 
-<Slider {...settings}>
+    {/* <Slider {...settings}> */}
     {Sdata.map((item, index) =>{
      return(
          <div className="box d_flex top" key={index}>
@@ -36,7 +36,7 @@ function SlideCard ()  {
       </div>
      )
     })}
-    </Slider>
+    {/* </Slider> */}
    
    
    </>

@@ -1,30 +1,22 @@
+import { Router, Routes, Route } from 'react-router-dom';
+import Pages from './pages/Pages';
+import Header from './component/Header/Header';
 import './App.css'
-import Header from './component/Header/Header'
-import React from "react";
-import Pages from'./pages/Pages'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
-
-
-
+import Datam from './comman/flashDeals/Datam';
+import { useState } from 'react';
 
 function App() {
-
+  const {productItems} = Datam 
+  const [cardItem, setCardItem] = useState ([])
   return (
     <>
-      <Router>
-      <Header/>
-      <Switch>
-        <Route path='/' exact>
-            <Pages/>
-        </Route>
-      </Switch>
-      </Router>
-
-    
-    
+      <Header />
+      <Routes>
+        <Route path='/' element={<Pages productItems={productItems}  />} />
+        
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

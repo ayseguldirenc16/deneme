@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 function Navbar() {
   const [MobileMenu, setMobileMenu]= useState(false)
 
@@ -18,7 +19,8 @@ function Navbar() {
              <h4>Kategoriler <i><FontAwesomeIcon icon={faChevronCircleDown} /></i></h4>
           </div>
           <div className="navLink">
-            <ul className="nav">
+            <ul className={MobileMenu ? "nav-links-MobileMenu": "link f_flex capitalize" }
+             onClick={()=> setMobileMenu(false)}>
               <li>
                 <Link to="/" >Anasayfa</Link>
                 
@@ -36,6 +38,10 @@ function Navbar() {
               <Link to="/contact" >İletişim</Link>
               </li>
             </ul>
+
+            <button className='toggle' onClick={() => setMobileMenu(!MobileMenu)}>
+              {MobileMenu ? <i className='fas fa-times close home-btn'></i> : <i className='fas fa-bars open'></i>}
+            </button>
 
            
           </div>
