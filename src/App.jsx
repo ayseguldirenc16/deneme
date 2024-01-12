@@ -2,8 +2,8 @@ import './App.css'
 import Header from './component/Header/Header'
 import React from "react";
 import Pages from'./pages/Pages'
-import { Route, BrowserRouter as Router  } from 'react-router-dom';
-import { Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 
 
@@ -21,8 +21,6 @@ function App() {
       </Switch>
       </Router>
 
-    {/* <Header/>
-    <Pages/> */}
     
     
     </>
