@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import Head from './Head'
 import Search from './Search'
 import "./Header.css"
-import { Router } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom';
 
 
 
@@ -14,8 +14,9 @@ function Header() {
     <>
     <Router>
       <Head/>
-      <Navbar/>
       <Search/>
+      <Navbar/>
+      
 
 
     </Router>
