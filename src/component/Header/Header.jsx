@@ -9,12 +9,12 @@ import "./Header.css"
 
 
 
-function Header() {
+function Header({cardItem}) {
   return (
     <>
    
       <Head/>
-      <Search/>
+      <Search  cardItem={cardItem} />
       <Navbar/>
       
 

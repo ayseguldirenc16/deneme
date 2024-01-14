@@ -11,7 +11,7 @@ function FlashDeals({productItems} ) {
         <div className="container">
             <div className="heading f_flex">
                 <i className="fa fa-bolt"><FontAwesomeIcon  icon={faBolt} /></i>
-                <h1>Flash Deals</h1>
+                <h1>Müthiş İndirimler</h1>
             </div>  
         </div>
         <FlashCard productItems={productItems}/>

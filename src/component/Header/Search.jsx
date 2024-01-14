@@ -7,9 +7,9 @@ import {Link } from 'react-router-dom';
 
 
 
-function Search() {
+function Search({cardItem}) {
   window.addEventListener("scroll",function(){
-    const search = this.document.querySelector(".Search")
+    const Search = this.document.querySelector(".Search")
     Search.classList.toggle("active", window.scrollY > 100)
   })
   return (
@@ -31,7 +31,7 @@ function Search() {
                 <Link to="/cart" >
                   <i className="fa fa-user icon-circle"><FontAwesomeIcon  icon={faUser} className='userIcon' /></i>
                   <i className='fa fa-shopping-bag icon-circle'><FontAwesomeIcon icon={faShoppingBag} className='Shopping'  /></i>
-                  <span>0</span>
+                  <span>{cardItem.length===0? "": cardItem.length}</span>
                 </Link>
               </div>
             </div>
