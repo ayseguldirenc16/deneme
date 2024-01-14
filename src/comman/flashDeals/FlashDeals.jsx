@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBolt} from '@fortawesome/free-solid-svg-icons';
 import FlashCard from './FlashCard';
 
-function FlashDeals({productItems} ) {
+function FlashDeals({productItems  , addToCart} ) {
     
   return (
     <>
@@ -14,7 +14,7 @@ function FlashDeals({productItems} ) {
                 <h1>Müthiş İndirimler</h1>
             </div>  
         </div>
-        <FlashCard productItems={productItems}/>
+        <FlashCard productItems={productItems}  addToCart={addToCart} />
       </section>
     </>
   )

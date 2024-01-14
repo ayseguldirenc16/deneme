@@ -7,7 +7,7 @@ function Pages({productItems, cardItem,addToCart}) {
     <>
       
       <Home cardItem={cardItem}   />
-      <FlashDeals productItems={productItems} />
+      <FlashDeals productItems={productItems} addToCart={addToCart} />
     </>
   )
 }

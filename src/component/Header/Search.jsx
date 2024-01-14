@@ -28,7 +28,7 @@ function Search({cardItem}) {
             <div className="icon f_flex width">
               {/* <i className="fa fa-user icon_circle"><FontAwesomeIcon icon={faCircle} /> </i> */}
               <div className="cart">
-                <Link to="/cart" >
+                <Link to="/card" >
                   <i className="fa fa-user icon-circle"><FontAwesomeIcon  icon={faUser} className='userIcon' /></i>
                   <i className='fa fa-shopping-bag icon-circle'><FontAwesomeIcon icon={faShoppingBag} className='Shopping'  /></i>
                   <span>{cardItem.length===0? "": cardItem.length}</span>
