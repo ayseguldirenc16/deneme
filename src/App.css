@@ -224,5 +224,34 @@ button {
   background: #d67424;
   color: #fff;
   cursor: pointer;
+}
+.heading .heading-left i{
+  font-size: 25px;
+}
+.heading .heading-left h2{
+  font-size: 25px;
+  margin: 5px;
+  color: grey;
+}
+.heading .heading-right ,
+.heading .heading-right i{ 
+  text-align: right;
+  color: grey;
+}
 
+.heading .heading-left i{
+  text-align: right;
+  color: #cc814f;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
 }

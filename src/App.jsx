@@ -5,8 +5,20 @@ import './App.css'
 import Data from './comman/flashDeals/Data'
 import { useState } from 'react';
 import Card from './component/cart/Card';
+import TopCate from './comman/top/TopCate';
 
 function App() {
+
+
+  const decreaseQty= (product)=>{
+    const productExit = cardItem.find((item)=>item.id===product.id)
+    if(productExit.qty ===1){
+      setCardItem(cardItem.filter((item)=>item.id !== product.id))
+    }else{
+      setCardItem(cardItem.map((item)=>(item.id===product.id ? {...productExit , qty:productExit.qty-1}:item)))
+    }
+
+  }
   const {productItems} = Data 
   const [cardItem, setCardItem] = useState ([])
 
@@ -30,9 +42,11 @@ function App() {
         <Header cardItem={cardItem} />
               <Routes>
                 <Route path='/' element={<Pages productItems={productItems} addToCart={addToCart}  />} />
-                <Route path='/card' element={<Card cardItem={cardItem} addToCart={addToCart}  />} />
-              
+                <Route path='/card' element={<Card cardItem={cardItem} addToCart={addToCart} decreaseQty={decreaseQty} />} />
+                <Route path='/' element={<TopCate />} />
+                
               </Routes>
+              <TopCate/>
               
 
 
