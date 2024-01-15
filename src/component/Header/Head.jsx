@@ -14,8 +14,8 @@ function Head() {
             <label>ayseguldirenc16@gmail.com</label>
           </div>
           <div className="right row RText">
-            <label >Theme FQA</label>
-            <label >Need Helps</label>
+            <label >Dog Coffee</label>
+            <label >Yardım ?</label>
             <span>🏳️</span>
             <label>EN</label>
             <span>🏳️</span>
