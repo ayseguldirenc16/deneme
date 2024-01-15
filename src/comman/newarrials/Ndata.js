@@ -1,32 +1,32 @@
 const Ndata = [
     {
       imageId: "./images/category/arrivals1.png",
-      name: "Sunglass",
+      name: "Gözlük",
       price: "150",
     },
     {
       imageId: "./images/category/arrivals2.png",
-      name: "Makeup",
+      name: "Makyaj Malzemeleri",
       price: "250",
     },
     {
       imageId: "./images/category/arrivals3.png",
-      name: "Smart Watch",
+      name: "Akıllı Saat",
       price: "50",
     },
     {
       imageId: "./images/category/arrivals4.png",
-      name: "Lipstick",
+      name: "Ruj",
       price: "15",
     },
     {
       imageId: "./images/category/arrivals5.png",
-      name: "Green Plant",
+      name: " Sukulent",
       price: "10",
     },
     {
       imageId: "./images/category/arrivals6.png",
-      name: "Bonsai tree",
+      name: "Bonsai Ağacı",
       price: "400",
     },
   ]

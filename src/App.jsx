@@ -6,6 +6,7 @@ import Data from './comman/flashDeals/Data'
 import { useState } from 'react';
 import Card from './component/cart/Card';
 import TopCate from './comman/top/TopCate';
+import Sdata from './comman/shop/Sdata';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 
   }
   const {productItems} = Data 
+  const {shopItems} = Sdata 
   const [cardItem, setCardItem] = useState ([])
 
 
@@ -41,7 +43,9 @@ function App() {
     
         <Header cardItem={cardItem} />
               <Routes>
-                <Route path='/' element={<Pages productItems={productItems} addToCart={addToCart}  />} />
+                <Route path='/' 
+                element={<Pages productItems={productItems} 
+                addToCart={addToCart} shopItems={shopItems} />} />
                 <Route path='/card' element={<Card cardItem={cardItem} addToCart={addToCart} decreaseQty={decreaseQty} />} />
                 <Route path='/' element={<TopCate />} />
                 

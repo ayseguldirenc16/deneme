@@ -1,8 +1,8 @@
 const Sdata = [
     {
       id: 1,
-      title: "50% Off For Your First Shopping",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.",
+      title: "50% indirim fırsatı",
+      desc: "Muhteşem Kasım indirimleri ile %50'ye varan indirimler burada. Daha fazlası için tıklayınız...",
       cover: "./images/category/cat1.jpg" ,
     },
     // {

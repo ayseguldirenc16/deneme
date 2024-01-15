@@ -19,6 +19,7 @@ function TopCart() {
       {
         Tdata.map((item,index)=>{
           return(
+            <>
             <div className="box product" key={index}>
               <div className="nameTop d_flex">
                 <span className="tleft">{item.para}</span>
@@ -28,6 +29,7 @@ function TopCart() {
                 <img src={item.imageId} alt="" />
               </div>
             </div>
+            </>
           )
         })
       }

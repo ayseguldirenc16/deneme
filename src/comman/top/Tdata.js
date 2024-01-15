@@ -1,28 +1,28 @@
 const Tdata = [
     {
       imageId: "./images/category/c1.png",
-      para: "headphone",
-      desc: "3k orders this week",
+      para: "kulaklıklar",
+      desc: "stoklar tükeniyor",
     },
     {
       imageId: "./images/category/c2.png",
-      para: "watch",
-      desc: "4k orders this week",
+      para: "Akıllı Saatler",
+      desc: "son 40 ürün",
     },
     {
       imageId: "./images/category/c3.png",
-      para: "sunglass",
-      desc: "6k orders this week",
+      para: "Gözlükler",
+      desc: "son 3 ürün",
     },
     {
       imageId: "./images/category/c2.png",
-      para: "watch",
-      desc: "4k orders this week",
+      para: "Akıllı Saatler",
+      desc: "son 15 ürün",
     },
     {
       imageId: "./images/category/c3.png",
-      para: "sunglass",
-      desc: "6k orders this week",
+      para: "Gözlükler",
+      desc: "son 30 ürün",
     },
    
   ]
